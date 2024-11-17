@@ -3,7 +3,7 @@
   padding: 0;
 }
 body {
-  font-family: Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
   background-color: #f8f9fa;
   height: 100vh;
   width: 100vw;
@@ -14,20 +14,30 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: nowrap;
-  padding: 10px 5rem;
+  padding: 10px 1rem;
   position: fixed;
   top:0px;
-  right:0px;
-  left:0px;
+  width: 100%; 
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-  z-index: 2;
+  overflow: hidden;
+  z-index: 5;
 }
-.header h1{
+.logo{
   font-family: "Grenze Gotisch", serif;
   font-size: 1.5rem;
   text-wrap: nowrap;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: nowrap;
 }
+#menu-toggle{
+  color: #800000;
+  display: none;
+  z-index: -1;
+
+}
+
 /* logo image */
 .header img{
   height: 50px;
@@ -35,11 +45,61 @@ body {
   border-radius: 5px;
   padding-left:1rem;
 }
-.header > nav{
+.header-nav{
+  padding: 0;
+  background-color: #800000;
+  color: #ffffff;
+  width: 40%;
+ position: relative;
+ display: flex;
+ justify-content: end;
+}
+.header > nav > ul > a{
+  text-decoration: none;
+  color:#FFFFFF;
+  font-size: 2.5rem;
+}
+.header-nav .logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+/* hamburger */
+.menu {
+  list-style: none;
   display: flex;
-  width: 50%;
-  justify-content: space-around;
-  align-self: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  align-items: center;
+}
+.menu li a {
+  color: white;
+  text-decoration: none;
+  padding: 0.5rem 1rem;
+  transition: background-color 0.3s;
+  font-size: 2rem
+}
+.menu li a:hover {
+  background-color: #800000;
+  border-radius: 4px;
+}
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 5px;
+}
+.hamburger span {
+  width: 25px;
+  height: 0.3rem;
+  background-color: white;
+  border-radius: 3px;
+}
+/* logo image */
+.header img{
+  height: 50px;
+  width: auto;
+  border-radius: 5px;
+  padding-left:1rem;
 }
 .header > nav  > a{
   text-decoration: none;
@@ -50,28 +110,17 @@ body {
   display: flex;
   flex-direction: row;
 }
-/* searching input */
-.header .Searching{
-  background-color:#ffffff;
-  border: none;
-  border-bottom: 2px solid none;
-  font-size: 1.3rem;
-  padding: 0px 10px;
-  border-radius: 15px;
-  box-shadow: none;
-  color:#333333;
-  width: 15rem;
-  max-width: 60%;
-}
+
+
 /* search buuton of header */
-.Search{
+/* .Search{
   font-size: 1.5rem;
   border-radius: 5px;
   background-color:#800000;
   border: none;
   color: #FFFFFF;
   margin-left: 10px;
-}
+} */
 .quiz-container {
   width: 100%;
   max-width: 800px;
@@ -84,11 +133,15 @@ body {
   top: 95px;
 }
 
-h2, h3 {
+h1, h2 {
   font-size: 2rem;
   text-wrap: wrap;
   text-align: center;
   color: #800000;
+  margin-bottom: 1rem;
+}
+h1{
+  font-size: 2.5rem;
 }
 h3{
   font-size: 1.5rem;
@@ -111,6 +164,7 @@ form {
   margin-bottom: 5px;
   font-size: 1rem;
   cursor: pointer;
+  margin-left: 10px;
 }
 .submit-btn {
   background-color: #800000;
@@ -187,32 +241,6 @@ flex-wrap: wrap;
 .footer-contact > p{
   margin-top: 5px;
 }
-@media (max-width:1050px){
-  .header{
-    flex-direction: column;
-    align-content: center;
-    gap: 5px;;
-   }
-   .heading{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-   }
-    .header-nav{
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-    .header > nav  > a{
-      font-size: 1.5rem;
-    }
-    .quiz-container{
-      top:238px;
-    }
-    .footer{
-      margin-top: 238px;
-    }
-}
 @media (max-width:580px){
   .footer-nav > ul{
     flex-direction: column;
@@ -230,4 +258,30 @@ flex-wrap: wrap;
   }
 
 }
+@media (max-width:800px){
+.menu {
+  display: none;
+  flex-direction: column;
+  background-color: rgba(112, 22, 22,0.5);
+  position: absolute;
+  top: 60px;
+  right: 10px;
+  width: 200px;
+  border-radius: 5px;
+  overflow: hidden;
+}
 
+.menu li {
+  text-align: center;
+  margin: 0;
+}
+
+#menu-toggle:checked + .hamburger + .menu {
+  display: flex;
+}
+
+.hamburger {
+  display: flex;
+}
+
+}

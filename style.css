@@ -4,6 +4,8 @@
   box-sizing: border-box;
 }
 body{
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
   height: 100vh;
   width: 100vw;
 }
@@ -23,7 +25,7 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px 2rem;
+  padding: 10px 10px;
   position: fixed;
   top:0px;
   width: 100%; 
@@ -33,12 +35,15 @@ body{
 }
 .logo{
   font-family: "Grenze Gotisch", serif;
-  font-size: 1.5rem;
+  font-size: 2rem;
   text-wrap: nowrap;
   display: flex;
   flex-direction: column;
   align-items: center;
   flex-wrap: nowrap;
+  padding: 0;
+  margin: 0;
+  max-width: 60%;;
 }
 #menu-toggle{
   z-index: 2;
@@ -55,16 +60,18 @@ body{
 }
 .header-nav{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
-  padding: 1rem;
+  padding: 1vw;
   background-color: #800000;
   color: white;
+  width: auto;
 }
 .header > nav > ul > a{
+
   text-decoration: none;
   color:#FFFFFF;
-  font-size: 2.5rem;
+  font-size:1rem;
 }
 .header-nav .logo {
   font-size: 2rem;
@@ -74,7 +81,7 @@ body{
 .menu {
   list-style: none;
   display: flex;
-  gap: 1.7rem;
+  gap: 0;
   align-items: center;
 }
 .menu li a {
@@ -82,7 +89,8 @@ body{
   text-decoration: none;
   padding: 0.5rem 1rem;
   transition: background-color 0.3s;
-  font-size: 2rem
+  font-size: 1.7rem;
+  padding: 2vw;
 }
 .menu li a:hover {
   background-color: #761515;
@@ -100,28 +108,8 @@ body{
   background-color: white;
   border-radius: 3px;
 }
-/* searching input */
-/* .header .Searching{
-  background-color:#ffffff;
-  border: none;
-  border-bottom: 2px solid none;
-  font-size: 1.3rem;
-  padding: 0px 10px;
-  border-radius: 15px;
-  box-shadow: none;
-  color:#333333;
-  width: 15rem;
-  max-width: 60%;
-} */
-/* search buuton of header */
-/* .Search{
-  font-size: 1.5rem;
-  border-radius: 5px;
-  background-color:#800000;
-  border: none;
-  color: #FFFFFF;
-  margin-left: 10px;
-} */
+
+
 /* whole content area */
 .content{
   
@@ -253,7 +241,7 @@ flex-wrap: wrap;
 }
 
 
-/* header and slide bar mobile based aproach */
+/*slide bar mobile based aproach */
 @media (max-width:1050px){
   
     .container{
@@ -282,7 +270,7 @@ flex-wrap: wrap;
       overflow-y:hidden;
       grid-column: 1/3;
       grid-row:2/3;
-      height: 8vh;
+      height: 70px;
       padding: 5px;
     }
     .slide-nav,.slide-nav > ul{
@@ -398,6 +386,7 @@ flex-wrap: wrap;
     }
 
   }
+  /* header ka liye media querry to convery into humberger */
   @media (max-width: 800px) {
     .menu {
       display: none;
