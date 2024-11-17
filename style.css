@@ -43,7 +43,7 @@ body{
   flex-wrap: nowrap;
   padding: 0;
   margin: 0;
-  max-width: 60%;;
+  max-width: 60%;
 }
 #menu-toggle{
   z-index: 2;
@@ -137,6 +137,9 @@ body{
   flex-grow: 1;
   text-align: justify;
 }
+.content-area > p,.content-area h2,.content-area h3,.content-area h1,.content-area ul,.content-area li{
+  padding:5px 0px;
+}
 h1{
   font-size: 2.5rem;
 }
@@ -173,6 +176,10 @@ h1{
   overflow-y: auto;
   border: 1px solid #ddd;
   z-index: 1;
+  color:teal;
+}
+.slide-nav {
+  color:#2c3e50;
 }
 .slide-nav a{
   text-decoration: none;
@@ -242,10 +249,16 @@ flex-wrap: wrap;
 }
 .footer-contact > p{
   margin-top: 5px;
+  color:#800000;
+  font-size: 1.2rem;
+  text-wrap: wrap;
+}
+.content-area  a{
+  color:#fff;
 }
 
 
-/*slide bar mobile based aproach */
+/*slide bar mobile/tablet based aproach */
 @media (max-width:1050px){
   
     .container{
@@ -266,7 +279,7 @@ flex-wrap: wrap;
     /* converting side to second header fixed just down the header  */
     .sidebar{
       position:fixed;
-      top: -30px;
+      top: -20px;
       width: 100%;
       z-index: 3;
       flex-direction: column;
