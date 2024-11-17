@@ -135,6 +135,10 @@ body{
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   font-size: 1.5rem;
   flex-grow: 1;
+  text-align: justify;
+}
+h1{
+  font-size: 2.5rem;
 }
 /* setting up content area images */
 .content-area > img,.content-area > ul > img{
@@ -144,7 +148,7 @@ body{
   clear: left;
   border-radius: 10px;
   box-shadow: 2px 3px 30px rgba(0, 0, 0, 0.3);
-  margin-left: 10px;
+  margin: 10px;
   z-index: 1;
 }
 .content-area > img:hover{

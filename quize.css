@@ -111,16 +111,6 @@ body {
   flex-direction: row;
 }
 
-
-/* search buuton of header */
-/* .Search{
-  font-size: 1.5rem;
-  border-radius: 5px;
-  background-color:#800000;
-  border: none;
-  color: #FFFFFF;
-  margin-left: 10px;
-} */
 .quiz-container {
   width: 100%;
   max-width: 800px;
@@ -131,6 +121,7 @@ body {
   border-radius: 8px;
   position: relative;
   top: 95px;
+  text-align: justify;
 }
 
 h1, h2 {
