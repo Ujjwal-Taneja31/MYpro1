@@ -38,7 +38,7 @@ body{
   font-size: 2rem;
   text-wrap: nowrap;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   flex-wrap: nowrap;
   padding: 0;
@@ -93,7 +93,7 @@ body{
   padding: 2vw;
 }
 .menu li a:hover {
-  background-color: #761515;
+  background-color: #800000;
   border-radius: 4px;
 }
 .hamburger {
@@ -115,7 +115,7 @@ body{
   
   grid-column: 2/3;
   grid-row: 2/4;
-  margin-top: 92px;
+  margin-top: 65px;
   display: flex;
   flex-wrap: nowrap;
   flex-direction: column;
@@ -164,7 +164,7 @@ h1{
 .sidebar{
   background-color:#f4f4f4;
   grid-row: 2/3;
-  margin-top: 92px;
+  margin-top: 70px;
   height: calc(100vh - 92px);
   padding: 20px;
   display: flex;
@@ -265,8 +265,8 @@ flex-wrap: wrap;
     }
     /* converting side to second header fixed just down the header  */
     .sidebar{
-      position: fixed;
-      top: 94;;
+      position:fixed;
+      top: -30px;
       width: 100%;
       z-index: 3;
       flex-direction: column;
@@ -274,7 +274,7 @@ flex-wrap: wrap;
       overflow-y:hidden;
       grid-column: 1/3;
       grid-row:2/3;
-      height: 70px;
+      height: 60px;
       padding: 5px;
     }
     .slide-nav,.slide-nav > ul{
@@ -290,7 +290,6 @@ flex-wrap: wrap;
       gap: 10px; /* List items ke beech spacing */
       padding-bottom: 60px;
       list-style-type: none; /* Dots remove karne ke liye */
-
     }
   .slide-nav ul > li{
     border-bottom: none;
@@ -351,7 +350,7 @@ flex-wrap: wrap;
     }   
     .content{
       width: 100%;
-      margin-top: calc(94px +  6vh);
+      margin-top:90px;
       grid-column: 1/3;
       grid-row: 3/4;
     }
@@ -415,6 +414,18 @@ flex-wrap: wrap;
   
     .hamburger {
       display: flex;
+    }
+    .content-area p{
+      font-size: 20px;
+    }
+    .content-area h1{
+      font-size: 2rem;
+    }
+    .content-area h2{
+    font-size: 1.5rem;
+    }
+    .content-area h3{
+      font-size: 1.3rem;
     }
   }
 
