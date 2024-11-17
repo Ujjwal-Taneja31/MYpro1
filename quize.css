@@ -112,7 +112,7 @@ body {
   .menu {
     display: none;
     flex-direction: column;
-    background-color: #800000;
+    background-color: rgba(128, 0, 0, 0.499);
     position: fixed;
     top: 80px;
     right: 10px;
@@ -135,7 +135,6 @@ body {
    .quiz-container  p{
     font-size: 1rem;
    }
-  
   }
 .quiz-container {
   width: 100%;
