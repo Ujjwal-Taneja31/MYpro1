@@ -312,6 +312,9 @@ flex-wrap: wrap;
     text-wrap: nowrap;
     font-size: 1rem;
   }
+  .slide-nav a{
+    text-wrap: nowrap;
+  }
     /* LI styling */
     .sidebar li {
       border-right: 1px solid black; /* List items ke beech line */
@@ -345,6 +348,7 @@ flex-wrap: wrap;
     }
   
     /* A styling */
+    /* for all a */
     .sidebar a {
       text-decoration: none; /* Underline remove */
       color: #333; 
@@ -352,6 +356,7 @@ flex-wrap: wrap;
       font-size: 0.9rem; /* Adjust font size */
       padding: 5px;
     }
+    /* for child */
     .slide-nav > a{
       display: inline-block;
       width: 100px;
@@ -403,7 +408,7 @@ flex-wrap: wrap;
     .footer-nav > ul > li > a{
       font-size: 1.5rem;
     }
-    /*adjusting padding and font size for mobiles (width less than 450px */
+    /*adjusting padding and font size for mobiles (width less than 580px */
     .content-area p,.content-area li{
       font-size: 0.9rem;
       padding-left: 3px;
@@ -449,6 +454,7 @@ flex-wrap: wrap;
     .hamburger {
       display: flex;
     }
+     /*adjusting padding and font size for mobiles (width less than 800px) */
     .content-area p{
       font-size: 20px;
     }
