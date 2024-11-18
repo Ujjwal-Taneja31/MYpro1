@@ -441,7 +441,16 @@ flex-wrap: wrap;
       font-size: 1.3rem;
     }
   }
-
+  /*adjusting padding and font size for mobiles (width less than 450px */
+@media(max-width: 450px){
+  .content-area p,.content-area li{
+    font-size: 0.9rem;
+    padding-left: 3px;
+  }
+  .content-area ul{
+    padding-left: 4px;
+  }
+}
 
 
 
