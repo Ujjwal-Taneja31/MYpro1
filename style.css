@@ -450,6 +450,15 @@ flex-wrap: wrap;
   .content-area ul{
     padding-left: 4px;
   }
+  .content-area h1{
+    font-size: 1.5rem;
+  }
+  .content-area h2{
+    font-size: 1.2rem;
+    }
+    .content-area h3{
+      font-size: 1.1rem;
+    }
 }
 
 
